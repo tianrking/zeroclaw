@@ -2590,7 +2590,7 @@ pub struct ChannelsConfig {
     /// MQTT pub/sub channel configuration.
     pub mqtt: Option<MqttChannelConfig>,
     /// ClawdTalk voice channel configuration.
-    pub clawdtalk: Option<crate::channels::clawdtalk::ClawdTalkConfig>,
+    pub clawdtalk: Option<crate::channels::ClawdTalkConfig>,
     /// Base timeout in seconds for processing a single channel message (LLM + tools).
     /// Runtime uses this as a per-turn budget that scales with tool-loop depth
     /// (up to 4x, capped) so one slow/retried model call does not consume the
